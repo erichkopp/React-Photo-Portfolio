@@ -3,14 +3,6 @@
   padding: 0;
   margin: 0;
   color: #000000;
-  /* DISABLE SELECTION OF ALL ITEMS (LOOKS CLEANER) */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome, Opera and Firefox */
 }
 
 .disable-scrollbars::-webkit-scrollbar {
@@ -98,6 +90,7 @@ body {
   cursor: pointer;
   height: 100%;
   width: auto;
+  background: #000000;
   border-right: solid 0.5rem;
   border-left: solid 0.5rem;
 }

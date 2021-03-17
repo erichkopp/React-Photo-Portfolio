@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="copyright">
-        <i className="far fa-copyright" /> ERICHKOPP 2020
+        <i className="far fa-copyright" /> ERICHKOPP {new Date().getFullYear()}
       </div>
       <div className="social-links">
         <a
