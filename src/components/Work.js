@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactImageAppear from 'react-image-appear';
 
 import Modal from "./Modal";
 import Arrows from "./Arrows";
@@ -21,11 +22,18 @@ export default function Work() {
   let images = [];
   for (let i = 1; i < 34; i++) {
     images.push(
-      <img
+      // <img
+      //   key={i}
+      //   src={`https://erichkopp.github.io/assets/${i}.jpg`}
+      //   className="scrolling-img"
+      //   alt=""
+      //   onClick={() => handleOpenModal(i)}
+      // />
+      <ReactImageAppear
         key={i}
         src={`https://erichkopp.github.io/assets/${i}.jpg`}
         className="scrolling-img"
-        alt=""
+        alt={`Image ${i}`}
         onClick={() => handleOpenModal(i)}
       />
     );
